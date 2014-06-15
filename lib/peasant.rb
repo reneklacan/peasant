@@ -1,0 +1,10 @@
+require 'em-proxy'
+require 'singleton'
+
+require 'peasant/node_callbacks'
+require 'peasant/node'
+require 'peasant/peer_info'
+require 'peasant/node_manager'
+require 'peasant/control_server'
+require 'peasant/server'
+require 'peasant/client'
