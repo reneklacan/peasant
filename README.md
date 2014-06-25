@@ -20,3 +20,8 @@ Other
 -----
 
 TBD
+
+License
+-------
+
+This library is distributed under the Beerware license.
