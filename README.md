@@ -25,6 +25,8 @@ gem 'peasant', '~> 0.0.2'
 * [How to use Peasant with Tor and Firefox for
 browsing](https://github.com/reneklacan/peasant/wiki/How-to-use-Peasant-with-Tor-and-Firefox-for-browsing)
 
-TBD
+TODO
 
 ## License
+
+This library is distributed under the Beerware license.
