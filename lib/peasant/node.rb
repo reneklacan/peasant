@@ -2,7 +2,7 @@ module Peasant
   class Node
     include NodeCallbacks
 
-    attr_reader   :host, :port
+    attr_reader :host, :port
     attr_accessor :load
 
     def initialize options={}

@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = 'rene@klacan.sk'
   s.files       = Dir["{lib}/**/*", "LICENSE", "README.md"]
   s.executables = []
-  s.homepage    = 'https://github.com/reneklacan/dictuby'
+  s.homepage    = 'https://github.com/reneklacan/peasant'
   s.license     = 'Beerware'
 
   s.required_ruby_version = '~> 1.9.3'

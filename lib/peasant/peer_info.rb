@@ -2,10 +2,7 @@ module Peasant
   class PeerInfo
     def initialize peer, args={}
       @peer = peer
-      @node = nil
-      @requests = 0
-      @node_expiration = 0
-
+      reset
       @max_requests = args[:max_requests] || 3
       @node_timeout = args[:node_timeout] || 15
     end
@@ -15,13 +12,15 @@ module Peasant
     end
 
     def node= n
+      reset
       @node = n
       @node_expiration = Time.now.to_f + @node_timeout
-      @requests = 0
     end
 
     def node_expired?
-      @node_expiration < Time.now.to_f || @requests > @max_requests
+      expired = @node_expiration < Time.now.to_f || @requests > @max_requests
+      reset if expired
+      expired
     end
 
     def inc_requests
@@ -30,6 +29,12 @@ module Peasant
 
     def reset_node_expiration
       @node_expiration = Time.now.to_f + @node_timeout
+    end
+
+    def reset
+      @node = nil
+      @requests = 0
+      @node_expiration = 0
     end
   end
 end
