@@ -16,7 +16,7 @@ gem install peasant
 Or you can put it in your Gemfile
 
 ```ruby
-gem 'peasant', '~> 0.0.2'
+gem 'peasant', '~> 0.0.3'
 ```
 
 ## Other
